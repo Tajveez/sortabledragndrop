@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        margin: 0;
-      }
-      .container {
-        background-color: #333;
-        padding: 1rem;
-        margin-top: 1rem;
-      }
-      .draggable {
-        padding: 1rem;
-        background-color: white;
-        border: 1px solid black;
-        cursor: move;
-      }
-    </style>
-    <script src="./app.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <p class="draggable" draggable="true">1</p>
-      <p class="draggable" draggable="true">2</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      background-color: #333;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .draggable {
+      display: flex;
+      padding: 1rem;
+      background-color: white;
+      border: 1px solid black;
+    }
+
+    .draggable .dragPoint {
+      cursor: move;
+    }
+  </style>
+  <script src="./app.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="draggable">
+      <div class="dragPoint">1</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam facere? Dolor in eaque eum,
+        voluptate quisquam, fugiat consectetur minima sed enim modi quo eveniet natus atque iusto cum!</div>
     </div>
-    <div class="container">
-      <p class="draggable" draggable="true">3</p>
-      <p class="draggable" draggable="true">4</p>
+    <div class="draggable">
+      <div class="dragPoint">2</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam facere? Dolor in eaque eum,
+        voluptate quisquam, fugiat consectetur minima sed enim modi quo eveniet natus atque iusto cum!</div>
     </div>
-  </body>
+    <div class="draggable">
+      <div class="dragPoint">3</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam facere? Dolor in eaque eum,
+        voluptate quisquam, fugiat consectetur minima sed enim modi quo eveniet natus atque iusto cum!</div>
+    </div>
+    <div class="draggable">
+      <div class="dragPoint">4</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam facere? Dolor in eaque eum,
+        voluptate quisquam, fugiat consectetur minima sed enim modi quo eveniet natus atque iusto cum!</div>
+    </div>
+  </div>
+  <!-- <div class="container">
+
+  </div> -->
+</body>
+
 </html>
